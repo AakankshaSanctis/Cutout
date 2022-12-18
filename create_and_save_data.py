@@ -139,7 +139,7 @@ test_loader = torch.utils.data.DataLoader(dataset=test_dataset,
 
 progress_bar = tqdm(train_loader)
 for i, (image, label) in enumerate(progress_bar):
-    save_path = './Cutout_CIFAR100/' + str(labels.item())
+    save_path = './Cutout_CIFAR100/' + str(label.item())
     if not os.path.exists(save_path):
         os.makedirs(save_path)
 
