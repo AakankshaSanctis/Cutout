@@ -146,5 +146,5 @@ for i, (image, label) in enumerate(progress_bar):
     save_path += str(i) + ".jpeg"
 
     with torch.no_grad():
-        img = trnF.to_pil_image(image).clamp(0, 1)
+        img = trnF.to_pil_image(image.squeeze()).clamp(0, 1)
     img.save(save_path)
