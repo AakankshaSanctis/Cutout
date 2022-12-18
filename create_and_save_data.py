@@ -51,7 +51,7 @@ torch.manual_seed(args.seed)
 if args.cuda:
     torch.cuda.manual_seed(args.seed)
 
-test_id = args.dataset + '_' + args.model
+# test_id = args.dataset + '_' + args.model
 
 print(args)
 
